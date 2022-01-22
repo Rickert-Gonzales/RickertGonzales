@@ -1,0 +1,32 @@
+@import "./fonts/catamaran/Catamaran-Black.ttf";
+@import "./fonts/catamaran/Catamaran-Bold.ttf";
+@import "./fonts/catamaran/Catamaran-ExtraBold.ttf";
+@import "./fonts/catamaran/Catamaran-Medium.ttf";
+@import "./fonts/catamaran/Catamaran-Regular.ttf";
+@import "./fonts/catamaran/Catamaran-SemiBold.ttf";
+/*  */
+@import "./fonts/nunito_sans/NunitoSans-Black.ttf";
+@import "./fonts/nunito_sans/NunitoSans-Bold.ttf";
+@import "./fonts/nunito_sans/NunitoSans-ExtraBold.ttf";
+@import "./fonts/nunito_sans/NunitoSans-Regular.ttf";
+@import "./fonts/nunito_sans/NunitoSans-SemiBold.ttf";
+
+:root {
+   /* Colores */
+   --fondo: #eeedf2;
+   --card-header: #141c3a;
+   --titulo: #141c3a;
+   --titulo-card: #595959;
+   --acentuacion: #12c945;
+   /* Fuentes */
+   --catamara: "Catamaran", sans-serif;
+   --nunito: "Nunito Sans", sans-serif;
+}
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   background: var(--fondo);
+}
