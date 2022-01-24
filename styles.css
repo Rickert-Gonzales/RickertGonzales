@@ -1,11 +1,15 @@
-@import "./fonts/catamaran/Catamaran-Medium.ttf";
-@import "./fonts/catamaran/Catamaran-Black.ttf";
-@import "./fonts/catamaran/Catamaran-Regular.ttf";
-/*  */
-@import "./fonts/nunito_sans/Nunito-Bold.ttf";
-@import "./fonts/nunito_sans/Nunito-SemiBold.ttf";
-@import "./fonts/nunito_sans/Nunito-Regular.ttf";
-
+@font-face {
+   font-family: Catamaran;
+   src: url("./fonts/catamaran/Catamaran-Black.ttf"), url("./fonts/catamaran/Catamaran-Medium.ttf"),
+      url("./fonts/catamaran/Catamaran-Regular.ttf");
+   font-display: swap;
+}
+@font-face {
+   font-family: Nunito;
+   src: url(./fonts/nunito_sans/Nunito-Bold.ttf), url(./fonts/nunito_sans/Nunito-Regular.ttf),
+      url(./fonts/nunito_sans/Nunito-SemiBold.ttf);
+   font-display: swap;
+}
 :root {
    /* Colores */
    --fondo: #eeedf2;
@@ -466,29 +470,4 @@ footer p {
       line-height: 16px;
       color: var(--titulo-card);
    }
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-}
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-}
-
-/* iPhone 4 and high pixel ratio devices ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-   only screen and (min-device-pixel-ratio: 1.5) {
 }
