@@ -16,11 +16,11 @@
    --fondo: #eeedf2;
    --card-header: #141c3a;
    --titulo: #141c3a;
-   --titulo-card: #595959;
+   --titulo-card: #6e6e6e;
    --acentuacion: #12c945;
    /* Fuentes */
    --catamara: "Catamaran", sans-serif;
-   --nunito: "Nunito Sans", sans-serif;
+   --nunito: "Nunito", sans-serif;
 }
 * {
    padding: 0;
@@ -201,7 +201,7 @@ a {
    font-style: normal;
    font-weight: 600;
    font-size: 14px;
-   line-height: 19px;
+   line-height: 21px;
 }
 .body-cards .card .title-card p {
    font-family: var(--catamara);
@@ -215,7 +215,7 @@ a {
 footer {
    display: flex;
    justify-content: center;
-   margin-top: 42px;
+   margin-top: 64px;
    margin-bottom: 36px;
 }
 footer p {
