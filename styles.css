@@ -187,7 +187,19 @@ a {
    -moz-border-radius: 8px;
    -ms-border-radius: 8px;
    -o-border-radius: 8px;
+   border: 0px solid var(--fondo);
+   /*  */
+   transition: 0.2s ease;
+   -webkit-transition: 0.2s ease;
+   -moz-transition: 0.2s ease;
+   -ms-transition: 0.2s ease;
+   -o-transition: 0.2s ease;
 }
+.body-cards .card:hover {
+   border: 2px solid var(--acentuacion);
+   background: var(--fondo);
+}
+
 .body-cards .card picture {
    padding-right: 32px;
 }
@@ -293,8 +305,8 @@ footer p {
       grid-column: 2;
       grid-row: 3/4;
       font-size: 16px;
-      line-height: 23px;
-      letter-spacing: 1px;
+      line-height: 24px;
+      letter-spacing: 1.5px;
    }
    .text {
       grid-column: 2;
@@ -440,9 +452,6 @@ footer p {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-   body {
-      background: green;
-   }
 }
 
 /* Landscape phones and down */
