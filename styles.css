@@ -1,15 +1,10 @@
-@import "./fonts/catamaran/Catamaran-Black.ttf";
-@import "./fonts/catamaran/Catamaran-Bold.ttf";
-@import "./fonts/catamaran/Catamaran-ExtraBold.ttf";
 @import "./fonts/catamaran/Catamaran-Medium.ttf";
+@import "./fonts/catamaran/Catamaran-Black.ttf";
 @import "./fonts/catamaran/Catamaran-Regular.ttf";
-@import "./fonts/catamaran/Catamaran-SemiBold.ttf";
 /*  */
-@import "./fonts/nunito_sans/NunitoSans-Black.ttf";
-@import "./fonts/nunito_sans/NunitoSans-Bold.ttf";
-@import "./fonts/nunito_sans/NunitoSans-ExtraBold.ttf";
-@import "./fonts/nunito_sans/NunitoSans-Regular.ttf";
-@import "./fonts/nunito_sans/NunitoSans-SemiBold.ttf";
+@import "./fonts/nunito_sans/Nunito-Bold.ttf";
+@import "./fonts/nunito_sans/Nunito-SemiBold.ttf";
+@import "./fonts/nunito_sans/Nunito-Regular.ttf";
 
 :root {
    /* Colores */
@@ -18,6 +13,7 @@
    --titulo: #141c3a;
    --titulo-card: #6e6e6e;
    --acentuacion: #12c945;
+   --username: #2fb856;
    /* Fuentes */
    --catamara: "Catamaran", sans-serif;
    --nunito: "Nunito", sans-serif;
@@ -94,19 +90,24 @@ a {
 .header .profile .flag {
    grid-column: 3;
    grid-row: 1/3;
+   width: 44px;
+   height: 44px;
+   object-fit: cover;
    display: flex;
    align-items: center;
    justify-content: right;
 }
 .header .profile .flag img {
    width: 44px;
+   height: 44px;
+   object-fit: cover;
 }
 /* =========== Email */
 .header .profile .email {
    grid-column: 2;
    grid-row: 2/3;
    font-family: var(--catamara);
-   font-weight: normal;
+   font-weight: 400;
    font-size: 14px;
    line-height: 20px;
    color: var(--acentuacion);
@@ -145,6 +146,11 @@ a {
 }
 /* ===== Logos */
 .technology ul li picture {
+   width: 24px;
+   height: 24px;
+   object-fit: cover;
+}
+.technology ul li picture img {
    width: 24px;
    height: 24px;
    object-fit: cover;
@@ -207,7 +213,7 @@ a {
    width: 42px;
    height: 42px;
 }
-.body-cards .card .title-card h4 {
+.body-cards .card .title-card span {
    font-family: var(--nunito);
    color: var(--titulo-card);
    font-style: normal;
@@ -218,11 +224,11 @@ a {
 .body-cards .card .title-card p {
    font-family: var(--catamara);
    font-style: normal;
-   font-weight: normal;
+   font-weight: 400;
    font-size: 12px;
    line-height: 16px;
    letter-spacing: 0.5px;
-   color: #12c945;
+   color: var(--username);
 }
 footer {
    display: flex;
@@ -295,17 +301,22 @@ footer p {
    .header .profile .flag {
       grid-column: 2;
       grid-row: 2/3;
+      width: 36px;
+      height: 36px;
+      object-fit: cover;
       justify-content: left;
    }
    .header .profile .flag img {
       width: 36px;
+      height: 36px;
+      object-fit: cover;
    }
    /* =========== Email */
    .header .profile .email {
       grid-column: 2;
       grid-row: 3/4;
       font-size: 16px;
-      line-height: 24px;
+      line-height: 1.5px;
       letter-spacing: 1.5px;
    }
    .text {
@@ -385,8 +396,15 @@ footer p {
       line-height: 38px;
    }
    /* =========== Bandera */
+   .header .profile .flag {
+      width: 54px;
+      height: 54px;
+      object-fit: cover;
+   }
    .header .profile .flag img {
       width: 54px;
+      height: 54px;
+      object-fit: cover;
    }
    /* =========== Email */
    .header .profile .email {
