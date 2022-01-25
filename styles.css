@@ -1,13 +1,13 @@
 @font-face {
    font-family: Catamaran;
-   src: url("./fonts/catamaran/Catamaran-Black.ttf"), url("./fonts/catamaran/Catamaran-Medium.ttf"),
-      url("./fonts/catamaran/Catamaran-Regular.ttf");
+   src: "./fonts/catamaran/Catamaran-Black.ttf", "./fonts/catamaran/Catamaran-Medium.ttf",
+      "./fonts/catamaran/Catamaran-Regular.ttf";
    font-display: swap;
 }
 @font-face {
    font-family: Nunito;
-   src: url(./fonts/nunito_sans/Nunito-Bold.ttf), url(./fonts/nunito_sans/Nunito-Regular.ttf),
-      url(./fonts/nunito_sans/Nunito-SemiBold.ttf);
+   src: "./fonts/nunito_sans/Nunito-Bold.ttf", "./fonts/nunito_sans/Nunito-Regular.ttf",
+      "./fonts/nunito_sans/Nunito-SemiBold.ttf";
    font-display: swap;
 }
 :root {
@@ -53,7 +53,6 @@ a {
    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.35);
    /* margin-bottom: 16px; */
 }
-
 /* Header */
 .header {
    padding-top: 26px;
@@ -94,12 +93,10 @@ a {
 .header .profile .flag {
    grid-column: 3;
    grid-row: 1/3;
-   width: 44px;
-   height: 44px;
    object-fit: cover;
    display: flex;
    align-items: center;
-   justify-content: right;
+   justify-content: center;
 }
 .header .profile .flag img {
    width: 44px;
@@ -111,9 +108,10 @@ a {
    grid-column: 2;
    grid-row: 2/3;
    font-family: var(--catamara);
-   font-weight: 400;
+   font-weight: 500;
    font-size: 14px;
-   line-height: 20px;
+   line-height: 23px;
+   letter-spacing: 0.5px;
    color: var(--acentuacion);
 }
 .text {
@@ -131,7 +129,7 @@ a {
    width: 100%;
    display: flex;
    justify-content: center;
-   padding-top: 24px;
+   padding-top: 14px;
    padding-bottom: 34px;
 }
 .technology .list-tech {
@@ -163,8 +161,8 @@ a {
 .technology ul li p {
    font-family: var(--catamara);
    font-weight: 500;
-   font-size: 14px;
-   line-height: 23px;
+   font-size: 16px;
+   line-height: 26px;
    color: var(--fondo);
 }
 /* ============================= */
@@ -223,7 +221,7 @@ a {
    font-style: normal;
    font-weight: 600;
    font-size: 14px;
-   line-height: 21px;
+   line-height: 19px;
 }
 .body-cards .card .title-card p {
    font-family: var(--catamara);
@@ -244,7 +242,7 @@ footer p {
    font-family: var(--nunito);
    font-style: normal;
    font-weight: 600;
-   font-size: 14px;
+   font-size: 12px;
    line-height: 16px;
    color: var(--titulo-card);
 }
@@ -305,10 +303,9 @@ footer p {
    .header .profile .flag {
       grid-column: 2;
       grid-row: 2/3;
-      width: 36px;
-      height: 36px;
       object-fit: cover;
       justify-content: left;
+      margin-bottom: 16px;
    }
    .header .profile .flag img {
       width: 36px;
@@ -365,7 +362,6 @@ footer p {
       width: 382px;
    }
 }
-
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
    /* Contenedor */
@@ -373,7 +369,6 @@ footer p {
       margin: 0 auto;
       width: 100%;
    }
-
    /* Header */
    .header {
       padding-top: 26px;
@@ -401,9 +396,10 @@ footer p {
    }
    /* =========== Bandera */
    .header .profile .flag {
-      width: 54px;
-      height: 54px;
+      grid-row: 1/3;
       object-fit: cover;
+      align-items: center;
+      justify-content: center;
    }
    .header .profile .flag img {
       width: 54px;
@@ -455,7 +451,6 @@ footer p {
       line-height: 16px;
    }
    footer {
-      border: 1px solid red;
       width: 100%;
       display: flex;
       justify-content: center;
